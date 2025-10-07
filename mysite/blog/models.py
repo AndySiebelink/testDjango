@@ -15,3 +15,17 @@ class Post(models.Model):
 
     def __str__(self):
         return self.title
+    
+class Voetbalspeler(models.Model):
+    naam = models.CharField(max_length=100)
+    club = models.CharField(max_length=100)
+    auteur = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
+    datum_invoer = models.DateTimeField(default=timezone.now)
+    datum_laatste_aanpassing = models.DateTimeField(blank=True, null=True)
+
+    def save_and_publish(self):
+        self.datum_laatste_aanpassing = timezone.now()
+        self.save()
+
+    def __str__(self):
+        return self.naam + " (" + self.club + ")"
