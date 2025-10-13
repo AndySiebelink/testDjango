@@ -1,0 +1,59 @@
+/* body */
+body {
+    background-color: #983530;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* header */
+.header {
+    background-color: #f2a83c;
+    color: black;
+    padding: 40px;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+/* container van de posts */
+.post-container {
+    background-color: #f6c2ca;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* post vak */
+article.post {
+    background-color: #f6c2ca;
+    padding: 15px;
+    margin-bottom: 25px;
+    border: 3px solid #ffffff;
+}
+
+/* datum/tijd */
+.date {
+    color: #444;
+    font-size: 0.9em;
+    display: block; 
+    margin-bottom: 5px;
+}
+/* post titels */
+article h2 a {
+    color: #f2a83c;
+}
+
+/* platte tekst */
+article p {
+    color: #333;
+    line-height: 1.5;
+}
+
+/* footer */
+.footer {
+    background-color: #f2a83c; 
+    color: black;
+    padding: 80px;
+    text-align: center; 
+    margin-top: 20px; 
+    font-size: 1em;
+}
