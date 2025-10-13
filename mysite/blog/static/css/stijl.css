@@ -15,11 +15,14 @@ body {
     margin-bottom: 20px;
 }
 
-/* container van de posts */
+/* post container */
 .post-container {
-    background-color: #f6c2ca;
-    max-width: 800px;
-    margin: 0 auto;
+    background-color: #f6c2ca;   
+    margin-left: 40%;
+    margin-right: 20%;
+    max-width: none;
+    margin-top: 0; 
+    padding: 0; 
 }
 
 /* post vak */
